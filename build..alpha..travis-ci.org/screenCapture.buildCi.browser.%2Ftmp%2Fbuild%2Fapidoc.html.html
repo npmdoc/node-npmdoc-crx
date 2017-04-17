@@ -1,0 +1,425 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/oncletom/crx">crx (v3.2.1)</a>
+</h1>
+<h4>crx is a utility to package Google Chrome extensions via a Node API and the command line</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crx">module crx</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crx.resolver">
+            function <span class="apidocSignatureSpan">crx.</span>resolver
+            <span class="apidocSignatureSpan">(pathOrFiles)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crx.toString">
+            function <span class="apidocSignatureSpan">crx.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>crx</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crx.crx">module crx.crx</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">crx.crx.</span>_allowUnknownOption</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crx.crx.Command">
+            function <span class="apidocSignatureSpan">crx.crx.</span>Command
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crx.crx.Option">
+            function <span class="apidocSignatureSpan">crx.crx.</span>Option
+            <span class="apidocSignatureSpan">(flags, description)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">crx.crx.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>_args</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>_execs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>args</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>commands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crx.crx.</span>rawArgs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">crx.crx.</span>_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">crx.crx.</span>_version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crx.resolver">module crx.resolver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crx.resolver.resolver">
+            function <span class="apidocSignatureSpan">crx.</span>resolver
+            <span class="apidocSignatureSpan">(pathOrFiles)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crx.toString">module crx.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crx.toString.toString">
+            function <span class="apidocSignatureSpan">crx.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crx" id="apidoc.module.crx">module crx</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crx.resolver" id="apidoc.element.crx.resolver">
+        function <span class="apidocSignatureSpan">crx.</span>resolver
+        <span class="apidocSignatureSpan">(pathOrFiles)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolve(pathOrFiles) {
+  return new Promise(function(resolve, reject){
+    // legacy and original mode
+    if (typeof pathOrFiles === 'string') {
+      return resolve({
+        path: pathOrFiles,
+        src: '**',
+      });
+    }
+
+    // new mode, with a list of files
+    else if (Array.isArray(pathOrFiles)) {
+      var manifestFile = '';
+
+      pathOrFiles.some(function(f){
+        if (/(^|\/)manifest.json$/.test(f)) {
+          manifestFile = f;
+          return true;
+        }
+      });
+
+      if (!manifestFile) {
+        return reject(new Error('Unable to locate a manifest file in your list of files.'))
+      }
+
+      var manifestDir = path.dirname(manifestFile);
+
+      return resolve({
+        path: path.resolve(manifestDir),
+        src: '{' + pathOrFiles.map(function(f){
+          return path.relative(manifestDir, f);
+        }).join(',') + '}'
+      })
+    }
+
+    //
+    else {
+      reject(new Error('load path is none of a folder location nor a list of files to pack'))
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crx.toString" id="apidoc.element.crx.toString">
+        function <span class="apidocSignatureSpan">crx.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crx.crx" id="apidoc.module.crx.crx">module crx.crx</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.crx.crx.Command" id="apidoc.element.crx.crx.Command">
+        function <span class="apidocSignatureSpan">crx.crx.</span>Command
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Command(name) {
+  this.commands = [];
+  this.options = [];
+  this._execs = {};
+  this._allowUnknownOption = false;
+  this._args = [];
+  this._name = name || '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crx.crx.Option" id="apidoc.element.crx.crx.Option">
+        function <span class="apidocSignatureSpan">crx.crx.</span>Option
+        <span class="apidocSignatureSpan">(flags, description)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Option(flags, description) {
+  this.flags = flags;
+  this.required = ~flags.indexOf('&lt;');
+  this.optional = ~flags.indexOf('[');
+  this.bool = !~flags.indexOf('-no-');
+  flags = flags.split(/[ ,|]+/);
+  if (flags.length &gt; 1 &amp;&amp; !/^[[&lt;]/.test(flags[1])) this.short = flags.shift();
+  this.long = flags.shift();
+  this.description = description || '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crx.resolver" id="apidoc.module.crx.resolver">module crx.resolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crx.resolver.resolver" id="apidoc.element.crx.resolver.resolver">
+        function <span class="apidocSignatureSpan">crx.</span>resolver
+        <span class="apidocSignatureSpan">(pathOrFiles)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolve(pathOrFiles) {
+  return new Promise(function(resolve, reject){
+    // legacy and original mode
+    if (typeof pathOrFiles === 'string') {
+      return resolve({
+        path: pathOrFiles,
+        src: '**',
+      });
+    }
+
+    // new mode, with a list of files
+    else if (Array.isArray(pathOrFiles)) {
+      var manifestFile = '';
+
+      pathOrFiles.some(function(f){
+        if (/(^|\/)manifest.json$/.test(f)) {
+          manifestFile = f;
+          return true;
+        }
+      });
+
+      if (!manifestFile) {
+        return reject(new Error('Unable to locate a manifest file in your list of files.'))
+      }
+
+      var manifestDir = path.dirname(manifestFile);
+
+      return resolve({
+        path: path.resolve(manifestDir),
+        src: '{' + pathOrFiles.map(function(f){
+          return path.relative(manifestDir, f);
+        }).join(',') + '}'
+      })
+    }
+
+    //
+    else {
+      reject(new Error('load path is none of a folder location nor a list of files to pack'))
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crx.toString" id="apidoc.module.crx.toString">module crx.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crx.toString.toString" id="apidoc.element.crx.toString.toString">
+        function <span class="apidocSignatureSpan">crx.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>

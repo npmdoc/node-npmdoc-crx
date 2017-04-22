@@ -1,4 +1,7 @@
-# api documentation for  [crx (v3.2.1)](https://github.com/oncletom/crx)  [![npm package](https://img.shields.io/npm/v/npmdoc-crx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-crx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-crx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-crx)
+# npmdoc-crx
+
+#### api documentation for  [crx (v3.2.1)](https://github.com/oncletom/crx)  [![npm package](https://img.shields.io/npm/v/npmdoc-crx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-crx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-crx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-crx)
+
 #### crx is a utility to package Google Chrome extensions via a Node API and the command line
 
 [![NPM](https://nodei.co/npm/crx.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/crx)
